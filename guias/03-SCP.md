@@ -31,3 +31,9 @@ scp -P 2222 jorellana@192.168.56.103:/home/jorellana/respuesta.txt .
 cat respuesta.txt
 
 Debe mostrar **Hola desde CentOS**. 
+04. Estructura de directorios de Linux
+**Desde CENTOS
+
+sudo dnf install -y tree
+tree -L 1 -d /
+tree -L 2 -d /home
