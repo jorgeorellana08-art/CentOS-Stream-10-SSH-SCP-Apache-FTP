@@ -6,8 +6,7 @@ En centos
 sudo dnf install -y openssh-server
 sudo systemctl enable --now sshd
 sudo systemctl status sshd
-
-Debe mostrar **active (running)**. Para salir de status, pulsa **Q**
+{runing{ 
 
 ## Respaldo (antes de cambiar la configuración)
 ~~~bash
