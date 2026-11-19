@@ -54,22 +54,6 @@ cd /drives/c/Users/jorge/Downloads
 echo 'Prueba FTP Jorge Orellana' > prueba_ftp.txt
 cat prueba_ftp.txt
 
-## D. Subir con FileZilla
-
-**DÓNDE: FILEZILLA en WINDOWS, sin comandos.**
-1. IZQUIERDA = **Sitio local**: C:\Users\jorge\Downloads\.
-2. DERECHA = **Sitio remoto**: /home/ftp_estudiante/subidas.
-3. Selecciona prueba_ftp.txt en la IZQUIERDA, clic derecho **Subir**.
-4. Comprobar «Transferencia correcta» y que el archivo aparece en la DERECHA.
-
-## E. Descargar con FileZilla
-
-**DÓNDE: FILEZILLA en WINDOWS, sin comandos.**
-1. Cambiar el SITIO LOCAL (IZQUIERDA) a **C:\Users\jorge\Documents\** para evitar mezclar el original con la descarga.
-2. Mantener el SITIO REMOTO (DERECHA) en /home/ftp_estudiante/subidas.
-3. Sobre prueba_ftp.txt en la DERECHA, clic derecho **Descargar**.
-4. Verificar «Transferencia correcta» y que prueba_ftp.txt aparece en la IZQUIERDA (Documents).
-5. Abrir el archivo descargado y comprobar el texto «Prueba FTP Jorge Orellana».
 
 **Evidencias:** vsftpd active (running), respaldo, usuario, carpeta, FileZilla conectado, subida y descarga con transferencia correcta.
 
