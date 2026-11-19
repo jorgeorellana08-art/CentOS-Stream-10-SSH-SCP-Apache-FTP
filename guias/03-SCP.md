@@ -16,8 +16,6 @@ cat prueba_scp.txt
 scp -P 2222 prueba_scp.txt jorellana@192.168.56.103:/home/jorellana/
 ~~~
 
-Poner la contraseña de jorellana. Confirmar **100%**. La opción de SCP es **-P mayúscula**.
-
 **DÓNDE: MobaXterm > pestaña SSH jorellana (CENTOS).**
 
 ~~~bash
