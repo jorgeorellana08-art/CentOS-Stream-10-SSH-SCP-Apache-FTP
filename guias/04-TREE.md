@@ -26,5 +26,3 @@ Explicación corta de directorios:
 - **/tmp**: temporales.
 - **/root**: carpeta del administrador.
 - **/proc** y **/sys**: información del sistema y núcleo.
-
-**Evidencia:** foto/captura del árbol de / y /home, y la explicación en tu informe.
