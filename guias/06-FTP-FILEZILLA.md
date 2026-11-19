@@ -1,24 +1,21 @@
 # 06. Servidor FTP con FileZilla
 
-**FTP se usa aquí solo en la red privada de laboratorio. Transmite usuario, contraseña y datos sin cifrar; fuera del laboratorio usa SFTP.**
-
 ## A. Preparar el servidor FTP
 
-**DÓNDE: CENTOS — pestaña SSH jorellana en MobaXterm. NO la terminal local de Windows.**
+Desde centos
 
 ~~~bash
 sudo dnf install -y vsftpd
 sudo systemctl enable --now vsftpd
 sudo systemctl status vsftpd
-~~~
 
-Verificar **active (running)**. Pulsa **Q** para salir.
+active (running)
 
 **Hacer respaldo:**
 ~~~bash
 sudo cp /etc/vsftpd/vsftpd.conf /etc/vsftpd/vsftpd.conf.bak-examen
 sudo ls -l /etc/vsftpd/vsftpd.conf*
-~~~
+
 
 **Crear usuario FTP (solo la primera vez):**
 ~~~bash
@@ -31,16 +28,12 @@ id ftp_estudiante
 sudo mkdir -p /home/ftp_estudiante/subidas
 sudo chown ftp_estudiante:ftp_estudiante /home/ftp_estudiante/subidas
 sudo ls -ld /home/ftp_estudiante/subidas
-~~~
 
-Si ls sin sudo dice **Permiso denegado**, usa **sudo ls**: el directorio es del usuario ftp_estudiante y es normal.
 
 **Firewall:**
-~~~bash
 sudo firewall-cmd --permanent --add-service=ftp
 sudo firewall-cmd --reload
 sudo firewall-cmd --list-services
-~~~
 
 Debe aparecer **ftp**.
 
@@ -54,17 +47,12 @@ Arriba:
 - **Contraseña:** la que asignaste.
 - **Puerto:** 21 (predeterminado de FTP).
 
-Pulsar **Conexión rápida**. Si indica «Registrado en» y lista /home/ftp_estudiante, está conectado.
 
 ## C. Crear el archivo que vamos a subir
-
-**DÓNDE: MobaXterm > Start local terminal = WINDOWS LOCAL. NO en la pestaña SSH jorellana.**
-
-~~~bash
+desde windows mob
 cd /drives/c/Users/jorge/Downloads
 echo 'Prueba FTP Jorge Orellana' > prueba_ftp.txt
 cat prueba_ftp.txt
-~~~
 
 ## D. Subir con FileZilla
 
