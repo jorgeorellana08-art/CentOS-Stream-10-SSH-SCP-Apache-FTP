@@ -1,0 +1,11 @@
+# Datos privados, temporales y credenciales
+*.key
+*.pem
+id_rsa
+id_ed25519
+.env
+.env.*
+*.log
+.DS_Store
+Thumbs.db
+*.swp
