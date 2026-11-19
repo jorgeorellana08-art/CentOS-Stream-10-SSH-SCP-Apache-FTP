@@ -38,11 +38,3 @@ Debe incluir el servicio **http**.
 En Chrome, Brave o Edge abrir:
 ~~~text
 http://192.168.56.103
-~~~
-
-Debe mostrar el título **Jorge Orellana**. La dirección puede cambiar según enp0s8.
-
-**Evidencias:**
-1. LADO SERVIDOR: terminal mostrando **httpd.service active (running)**.
-2. Respaldo: httpd.conf y httpd.conf.bak-examen.
-3. LADO CLIENTE: navegador mostrando **Jorge Orellana** y la IP del servidor.
