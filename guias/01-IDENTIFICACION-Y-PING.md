@@ -27,4 +27,3 @@ Resultado obtenido: **10 paquetes enviados, 10 recibidos, 0% de pérdida**.
 
 **Evidencias:** usuario, nombre, sistema, IP, multi-user.target y el resultado del ping completo.
 
-Si ves advertencias de permisos sobre el número de serie en hostnamectl, pero aparece el sistema operativo y el nombre, sigue con la práctica.
