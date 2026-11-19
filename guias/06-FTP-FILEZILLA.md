@@ -25,9 +25,6 @@ sudo ls -l /etc/vsftpd/vsftpd.conf*
 sudo useradd -m ftp_estudiante
 sudo passwd ftp_estudiante
 id ftp_estudiante
-~~~
-
-La contraseña debe tener al menos 8 caracteres. No se verá mientras la escribes. No publicarla en GitHub.
 
 **Crear carpeta y propietario:**
 ~~~bash
